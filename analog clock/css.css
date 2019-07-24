@@ -1,0 +1,182 @@
+/* Created by AKSHAY KR */
+
+
+      html, body
+      {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        background: #222;
+        overflow: auto;
+        text-align: center;
+        font-family: Sans;
+      }
+      
+      * 
+      { box-sizing: border-box; }
+      
+      #clock-wrapper
+      {
+        width: 320px;
+        height: 320px;
+        background: #3058d0;
+        border-radius: 50%;
+        position: relative;
+        margin: 70px auto 70px auto;
+        border-top: 10px inset  royalblue;
+        border-right: 10px inset   royalblue;
+        border-bottom: 10px outset   royalblue;
+        border-left: 10px outset  royalblue;
+      }
+      
+      span,
+      #clock-second,
+      #clock-minute,
+      #clock-hour
+      {
+        display: inline-block;
+        position: absolute;
+      }
+      
+      #clock-center
+      {
+        height: 15px;
+        width: 15px;
+        margin: auto;
+        background: #fff;
+        top: 142.5px;
+        left: 143px;
+        border-radius: 50%;
+        z-index: 5;
+      }
+      
+      #clock-second
+      {
+        width: 1px;
+        height: 130px;
+        background: white;
+        top: 19px;
+        left: 150px;
+        z-index: 4;
+        border-radius: 1px;
+      }
+      
+      #clock-minute
+      {
+        width: 3.5px;
+        height: 127.5px;
+        background: #c0c0c0;
+        top: 23px;
+        left: 149px;
+        z-index: 3;
+        border-radius: 3px;
+      }
+      
+      #clock-hour
+      {
+        width: 5.5px;
+        height: 85px;
+        background: #c0c0c0;
+        top: 64px;
+        left: 148px;
+        border-radius: 5px;
+        z-index: 2;
+      }
+      
+      #clock-second,
+      #clock-minute,
+      #clock-hour
+      {
+        -webkit-transform: rotate(0deg);
+        -webkit-transform-origin: 50% 100%;
+        -webkit-transition: -webkit-transform 0.75s;
+        transform: rotate(0deg);
+        transform-origin: 50% 100%;
+        transition: -webkit-transform 0.75s;
+      }
+      
+      .digits
+      {
+        width: 3px;
+        height: 18px;
+        background: #c0c0c0;
+        border-radius: 2.5px;
+        z-index: 2;
+      }
+      
+      .displayed-digits
+      {
+        color: gainsboro;
+        color:#eeeeee;
+        font-weight: bolder;
+        font-size: 22px;
+        font-family: Sans;
+        z-index: 0;
+      }
+      
+      .displayed-digits:nth-of-type(3)
+      {
+        top: 16px;
+        left: 138px;
+      }
+      
+      .displayed-digits:nth-of-type(4)
+      {
+        top: 136px;
+        right: 20px;
+      }
+      
+      .displayed-digits:nth-of-type(5)
+      {
+        bottom: 18px;
+        left: 144px;
+      }
+      
+      .displayed-digits:nth-of-type(6)
+      {
+        top: 136px;
+        left: 22px;
+      }
+      
+      #inner-circle
+      {
+        top: 39px;
+        left: 40px;
+        width: 220px;
+        height: 220px;
+        border: 2px solid royalblue;
+        border-radius: 50%;
+      }
+      
+      .mini-digits
+      {
+        width: 1.5px;
+        height: 6px;
+        border-radius: 0.75px;
+        background: gainsboro;
+      }
+      
+      #am-pm
+      {
+        left: 130px;
+        top: 170px;
+        color: royalblue;
+        background: darkblue;
+        padding: 3px 10px;
+        border-radius: 3px;
+        z-index: 0;
+        font-weight: bolder;
+        font-size: 85%;
+        letter-spacing: 2px;
+      }
+      
+      #my-name         
+      { 
+        display: inline-block; 
+        background: #333; 
+        padding: 7px 13px;
+        position: relative;
+        border-radius: 20px;
+        font-size: 80%;
+        color: #777;
+      }
